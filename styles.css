@@ -1,8 +1,5 @@
 :root {
-    --primary-color: #FA5305; /* Naranja vibrante */
-    --secondary-color: #F0A6A5; /* Melón */
-    --background-light: #f7f7f7;
-    --button-hover: #E9581F; /* Naranja oscuro */
+    --primary-color: #FA5305; 
 }
 
 body {
@@ -45,7 +42,7 @@ button.btn {
 }
 
 button.btn:hover, button.btn:focus {
-    background-color: var(--button-hover)  !important;
+    background-color: var(--primary-color)  !important;
 }
 
 /* Opciones de respuesta */

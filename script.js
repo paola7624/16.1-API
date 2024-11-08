@@ -9,7 +9,7 @@ document.getElementById('start').addEventListener('click', function () {
     document.getElementById('game').appendChild(loadingMessage);
 
     // Cargar preguntas
-    fetch("https://opentdb.com/api.php?amount=50&category=27")
+    fetch("https://opentdb.com/api.php?amount=50&category=9")
       .then(response => response.json())
       .then(async data => {
         const allQuestions = data.results;
