@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia Game</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="d-flex align-items-center justify-content-center vh-100">
+        <!-- Welcome Section -->
+        <section id="welcome" class="text-center">
+            <div class="jumbotron bg-light p-5 shadow-sm rounded">
+                <h1 class="display-4">Practica tu inglés jugando al trivia</h1>
+                <p class="lead">Pon a prueba tus conocimientos.</p>
+                <button id="start" class="btn btn-primary btn-lg mt-3">Comenzar</button>
+            </div>
+        </section>
+
+        <!-- Game Section -->
+        <section id="game" class="d-none text-center">
+            <div class="card mx-auto shadow-lg p-4" style="max-width: 600px;">
+                <h5 class="card-title text-center">Pregunta <span id="question-number">1</span></h5>
+                <p id="question" class="card-text h4 font-weight-bold mb-4">Contenido de la pregunta</p>
+
+                <form id="answer-form">
+                    <div class="form-group" id="answers">
+                        <!-- Respuestas -->
+                    </div>
+                    <button type="submit" class="btn btn-success btn-block mt-4" id="next-question">Siguiente pregunta</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Results Section -->
+        <section id="results" class="d-none text-center">
+            <div id="points" class="card mx-auto shadow-lg p-4" style="max-width: 600px;">
+                <!-- Puntos obtenidos en el juego -->
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
